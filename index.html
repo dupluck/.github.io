@@ -4,53 +4,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pixel Art Creator</title>
+    <title>Jonathan Cowley | Developer</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
+    <div class="pixel-character" id="pixelCharacter"></div>
+
     <header>
-        <h1>Pixel Art Creator</h1>
+        <nav>
+            <div class="logo">JC</div>
+            <ul>
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main class="container">
-        <div class="tools">
-            <div class="color-picker">
-                <label for="colorPicker">Color:</label>
-                <input type="color" id="colorPicker" value="#000000">
+    <section id="home" class="hero">
+        <div class="pixel-scene" id="pixelScene">
+            <!-- Pixel art scene will be rendered here by JS -->
+        </div>
+        <div class="hero-content">
+            <h1>Jonathan Cowley</h1>
+            <h2>Developer & Pixel Artist</h2>
+            <p>Creating digital experiences with code and pixels</p>
+            <button id="interactButton">Say Hello!</button>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Hello! I'm a developer with a passion for creating interactive experiences. I love combining code
+                    with creative elements like pixel art to make websites that are both functional and delightful.</p>
+                <p>When I'm not coding, you can find me experimenting with pixel art, playing video games, or exploring
+                    new technologies.</p>
+                <div class="skills">
+                    <h3>Skills</h3>
+                    <div class="skill-icons">
+                        <div class="skill-icon" data-skill="HTML5"><i class="fab fa-html5"></i></div>
+                        <div class="skill-icon" data-skill="CSS3"><i class="fab fa-css3-alt"></i></div>
+                        <div class="skill-icon" data-skill="JavaScript"><i class="fab fa-js"></i></div>
+                        <div class="skill-icon" data-skill="Node.js"><i class="fab fa-node-js"></i></div>
+                        <div class="skill-icon" data-skill="React"><i class="fab fa-react"></i></div>
+                    </div>
+                </div>
             </div>
-            <div class="buttons">
-                <button id="clearBtn">Clear Canvas</button>
-                <button id="saveBtn">Save Art</button>
-                <button id="downloadBtn">Download</button>
-            </div>
-            <div class="size-selector">
-                <label for="canvasSize">Canvas Size:</label>
-                <select id="canvasSize">
-                    <option value="16">16×16</option>
-                    <option value="32" selected>32×32</option>
-                    <option value="64">64×64</option>
-                </select>
+            <div class="pixel-portrait" id="pixelPortrait">
+                <!-- Pixel art portrait will be rendered here by JS -->
             </div>
         </div>
+    </section>
 
-        <div class="canvas-container">
-            <div id="pixelCanvas"></div>
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <div class="project-pixel-art" id="project1Art"></div>
+                <h3>Pixel Art Gallery</h3>
+                <p>A collection of my pixel art creations with interactive elements.</p>
+                <div class="project-links">
+                    <a href="#" class="button">View Project</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-pixel-art" id="project2Art"></div>
+                <h3>Interactive Story</h3>
+                <p>A web-based story with branching narratives and pixel art illustrations.</p>
+                <div class="project-links">
+                    <a href="#" class="button">View Project</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-pixel-art" id="project3Art"></div>
+                <h3>Retro Game</h3>
+                <p>A small browser game built with JavaScript and pixel art sprites.</p>
+                <div class="project-links">
+                    <a href="#" class="button">View Project</a>
+                </div>
+            </div>
         </div>
-    </main>
+    </section>
 
-    <section class="gallery">
-        <h2>Your Gallery</h2>
-        <div id="artGallery"></div>
+    <section id="contact" class="contact">
+        <h2>Get In Touch</h2>
+        <div class="contact-content">
+            <div class="contact-text">
+                <p>Interested in working together? Feel free to reach out!</p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>hello@example.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <span>github.com/username</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <span>linkedin.com/in/username</span>
+                    </div>
+                </div>
+            </div>
+            <div class="pixel-mailbox" id="pixelMailbox">
+                <!-- Pixel art mailbox will be rendered here by JS -->
+            </div>
+        </div>
     </section>
 
     <footer>
-        <p>Created with ❤️ - Interactive Pixel Art Tool</p>
+        <p>© 2025 Jonathan Cowley. All pixel art and code created by me.</p>
+        <div class="pixel-footer" id="pixelFooter"></div>
     </footer>
 
-    <!-- Load html2canvas library for saving artwork -->
-    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
-    <!-- Main application script -->
     <script src="script.js"></script>
 </body>
 
