@@ -19,40 +19,17 @@ A creative personal website featuring interactive pixel art elements including a
 - **Animated Elements**: Pixel art that responds to page scrolling
 - **Interactive Button**: Click to trigger animations and interactions
 
-## How to Deploy to Netlify
+## How to Deploy to GitHub Pages
 
-1. Make sure you have Node.js installed
+1. Create a repository named `username.github.io`
 
-2. Install Netlify CLI:
+2. Push your code to the repository:
    ```
-   npm install -g netlify-cli
-   ```
-
-3. Initialize Git in this directory (if not already done):
-   ```
-   git init
-   git add .
-   git commit -m "Initial commit"
+   git remote add origin https://github.com/username/username.github.io.git
+   git push -u origin main
    ```
 
-4. Deploy to Netlify:
-   ```
-   netlify deploy
-   ```
-
-5. Follow the command prompts:
-   - Choose to create a new site
-   - Select your team
-   - Set the deploy path to the current directory (.)
-
-6. Check the preview URL to make sure everything looks good
-
-7. Deploy to production:
-   ```
-   netlify deploy --prod
-   ```
-
-8. Your site is now live at the URL Netlify provides!
+3. GitHub will automatically deploy your site to `https://username.github.io`
 
 ## Customization
 
@@ -62,4 +39,4 @@ A creative personal website featuring interactive pixel art elements including a
 
 ## License
 
-Free to use for personal and commercial projects. 
+Free to use for personal and commercial projects.
