@@ -1,14 +1,23 @@
-# Pixel Art Creator
+# Interactive Pixel Art Personal Website
 
-An interactive pixel art creation tool that lets you draw, save, and download pixel art.
+A creative personal website featuring interactive pixel art elements including animated backgrounds, a pixel character that follows your cursor, and interactive elements that respond to scrolling and clicks.
 
 ## Features
 
-- Create pixel art on customizable canvas sizes (16×16, 32×32, 64×64)
-- Choose any color using the color picker
-- Save your creations to a gallery (stored in local storage)
-- Download your pixel art as PNG images
-- Responsive design works on desktop and mobile devices
+- Responsive personal portfolio design with pixel art aesthetic
+- Interactive pixel character that follows your mouse cursor
+- Pixel art scene that changes as you scroll
+- Interactive project cards with hover effects
+- Pixel art elements that animate on interaction
+- Clean, modern design with pixelated accents
+
+## Interactive Elements
+
+- **Pixel Character**: Follows your cursor around the page and reacts to clicks
+- **Hero Section**: Parallax scrolling background with pixel art mountains and clouds
+- **Project Cards**: Interactive hover effects on the pixel art images
+- **Animated Elements**: Pixel art that responds to page scrolling
+- **Interactive Button**: Click to trigger animations and interactions
 
 ## How to Deploy to Netlify
 
@@ -19,7 +28,7 @@ An interactive pixel art creation tool that lets you draw, save, and download pi
    npm install -g netlify-cli
    ```
 
-3. Initialize Git in this directory:
+3. Initialize Git in this directory (if not already done):
    ```
    git init
    git add .
@@ -47,9 +56,9 @@ An interactive pixel art creation tool that lets you draw, save, and download pi
 
 ## Customization
 
-- Edit `style.css` to change the appearance
-- Modify `index.html` to add new features or UI elements
-- Update `script.js` to enhance functionality
+- Edit `style.css` to change the appearance and animations
+- Modify `index.html` to update content and structure
+- Update `script.js` to enhance pixel art interactions and animations
 
 ## License
 
