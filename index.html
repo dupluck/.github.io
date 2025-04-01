@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Art Creator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Pixel Art Creator</h1>
+    </header>
+
+    <main class="container">
+        <div class="tools">
+            <div class="color-picker">
+                <label for="colorPicker">Color:</label>
+                <input type="color" id="colorPicker" value="#000000">
+            </div>
+            <div class="buttons">
+                <button id="clearBtn">Clear Canvas</button>
+                <button id="saveBtn">Save Art</button>
+                <button id="downloadBtn">Download</button>
+            </div>
+            <div class="size-selector">
+                <label for="canvasSize">Canvas Size:</label>
+                <select id="canvasSize">
+                    <option value="16">16×16</option>
+                    <option value="32" selected>32×32</option>
+                    <option value="64">64×64</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="canvas-container">
+            <div id="pixelCanvas"></div>
+        </div>
+    </main>
+
+    <section class="gallery">
+        <h2>Your Gallery</h2>
+        <div id="artGallery"></div>
+    </section>
+
+    <footer>
+        <p>Created with ❤️ - Interactive Pixel Art Tool</p>
+    </footer>
+
+    <!-- Load html2canvas library for saving artwork -->
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <!-- Main application script -->
+    <script src="script.js"></script>
+</body>
+
+</html>
